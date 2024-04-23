@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1A1A1A;
+    scroll-behavior: smooth;
+}
+
+/* Navigations */
+nav .navbar-brand {
+    font-family: "JetBrains Mono", monospace;
+    color: #FEFEFE;
+    transition: all 0.3s;
+}
+
+nav .navbar-brand:hover {
+    color: #48cae4;
+}
+
+nav button .navbar-toggler-icon {
+    color: #FEFEFE;
+}
+
+nav .sidebar {
+    color: #FEFEFE;
+}
+
+nav .sidebar .offcanvas-body .navbar-nav a {
+    font-family: "Roboto Mono", monospace;
+    color: #FEFEFE;
+}
+/* Navigations */
+
+/* Hero */
+.hero .hero-image {
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.hero .container-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero .desc-hero {
+    margin: 7px;
+    display: block;
+}
+
+.hero .container-hero p {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 0.6rem;
+    padding: 6px 14px;
+    display: inline-block;
+    mix-blend-mode: multiply;
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #FEFEFE;
+}
+
+.hero .container-hero .desc {
+    color: #FEFEFE;
+    -webkit-text-stroke: 0px;
+    mix-blend-mode: normal;
+    opacity: 90%;
+    letter-spacing: 0.5rem;
+}
+/* Hero */
+
+/* About */
+.about {
+    background-color: #202020;
+}
+
+.about .profile {
+    padding: 32px 0px;
+}
+
+.about .profile .profile-photo img {
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #FEFEFE;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about .profile .profile-photo img:hover {
+    opacity: 70%;
+    transform: translateX(5px);
+}
+
+.about .profile .profile-desc {
+    font-family: "Roboto Mono", monospace;
+    text-align: justify;
+}
+
+.about .profile .profile-desc h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.about .profile .profile-desc .desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.about .profile .profile-desc .cv {
+    padding: 0;
+    list-style: none;
+    margin: 1em;
+}
+
+.about .profile .profile-desc li {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    border: 2px solid #48cae4;
+    border-radius: 8px;
+    background-color: #FFF;
+    padding: 0px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.about .profile .profile-desc li:hover{
+    border: 2px solid #FFF;
+    background-color: #48cae4;
+    color: #FEFEFE;
+    transform: translateY(-3px);
+}
+
+.about .profile .profile-desc a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-weight: 600;
+}
+
+.about .profile .profile-desc a:hover {
+    color: #FFF;
+}
+/* About */
+
+/* Education's & Experience */
+.edu-exp h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.edu-exp .education .head-school{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FEFEFE;
+}
+
+.edu-exp .education .name-school {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    color: #48cae4;
+}
+
+.edu-exp .education .year-school {
+    font-weight: 200;
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.edu-exp .experience .head-exp {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FEFEFE;
+}
+
+.edu-exp .experience .name-exp {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    color: #48cae4;
+}
+
+.edu-exp .experience .year-exp {
+    font-weight: 200;
+    font-size: 18px;
+    opacity: 70%;
+}
+/* Education's & Experience */
+
+/* Skill */
+.skill h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.skill .card {
+    height: 16rem;
+    border: 2px solid #FFF;
+    background-color: #202020;
+    border-radius: 25px;
+    color: #FEFEFE;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill .card:hover {
+    cursor: pointer;
+    transform: translateY(-12px);
+    -webkit-box-shadow: 0px 20px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 20px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 3px 0px rgba(0,0,0,0.75);
+}
+
+.skill .card img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+.skill .card img:hover {
+    opacity: 60%;
+}
+
+.skill .card .card-body {
+    flex-grow: 1;
+}
+
+.skill .card .card-title {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.skill .card .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.skill .line-white {
+    border-bottom: 3px solid#FEFEFE;
+}
+/* Skill */
+
+/* Portfolio */
+.portfolio h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.portfolio .card {
+    color: #FEFEFE;
+    height: 18rem;
+    background-color: #202020;
+    border: 2px solid #FFF;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    padding: 0px 0px 0px !important;
+}
+
+.portfolio .card:hover {
+    transform: translateY(-12px);
+}
+
+.portfolio .card img {
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in;
+}
+
+.portfolio .card img:hover {
+    opacity: 60%;
+}
+
+.portfolio .card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .card .card-title {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.portfolio .card .card-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+.portfolio .card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.portfolio .card .card-text span {
+    opacity: 70%;
+    margin-bottom: 12px;
+}
+
+.portfolio .card .btn-port a {
+    border: 2px solid #48cae4;
+    color: #FEFEFE;
+    transition: all 0.3s ease-in;
+} 
+
+.portfolio .card .btn-port a .btn {
+    padding: 0px 12px;
+}
+
+.portfolio .card .btn-port a:hover {
+    background-color: #48cae4;
+    border: 2px solid #FEFEFE;
+}
+/* Portfolio */
+
+/* Contact */
+.contact .box-contact {
+    border: 2px solid #FFF;
+    border-radius: 25px;
+    background-color: #202020;
+    margin: 22px;
+}
+
+.contact .box-contact .col-md-4 h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.contact .box-contact .col-md-4 .social-media li{
+    list-style: none;
+    padding: 0px 12px;
+    border: 2px solid #48cae4;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    width: 8rem;
+}
+
+.contact .box-contact .col-md-4 .social-media li:hover {
+    transform: translateX(8px);
+}
+
+.contact .box-contact .col-md-4 .social-media a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #FEFEFE;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .box-contact .col-md-4 .social-media a:hover {
+    opacity: 60%;
+}
+
+.contact .box-contact .col-md-8 .line-white {
+    border-bottom: 2px solid #48cae4;
+    margin-bottom: 7px;
+}
+
+.contact .box-contact .col-md-8 form .form-control {
+    background-color: #1A1A1A;
+    border-radius: 8px;
+    border: 2px solid #48cae4;
+}
+
+.contact .box-contact .col-md-8 form ::placeholder {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact .box-contact .col-md-8 form input {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #FEFEFE;
+}
+
+.contact .box-contact .col-md-8 form input::placeholder {
+    color: #FEFEFE;
+    opacity: 70%;
+}
+
+.contact .box-contact .col-md-8 form textarea {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #FEFEFE;
+}
+
+.contact .box-contact .col-md-8 form textarea::placeholder {
+    color: #FEFEFE;
+    opacity: 70%;
+}
+
+.contact .box-contact .col-md-8 form button {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    border: 2px solid #48cae4;
+    background-color: #1A1A1A;
+    color: #FEFEFE;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .box-contact .col-md-8 form button:hover {
+    transform: translateX(12px);
+    opacity: 60%;
+    cursor: pointer;
+}
+
+/* Contact */
+
+/* Footer */
+footer {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+footer .line-white {
+    border-top: 2px solid #48cae4;
+}
+/* Footer */
+
+/* Media */
+@media (max-width: 991px) {
+    nav .sidebar {
+        background-color: rgba(26, 26, 26, 0.15);
+        backdrop-filter: blur(8px);
+    }
+}
+
+@media (max-width: 767px) {
+    .contact .box-contact .col-md-4 .social-media ol, ul {
+        padding-left: 0rem !important;
+    }
+}
+/* Media */
